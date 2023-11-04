@@ -19,7 +19,7 @@ app.use("/api/v1/str", strRouter);
 
 connectDB()
   .then(() => {
-    console.log(`Successfully connected to DB`);
+    console.log(`Successfully connected to MONGODB`);
     app.listen(PORT, () => {
       console.log(`Server is running on the http://localhost:${PORT}/health`);
     });
