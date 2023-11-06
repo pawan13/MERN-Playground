@@ -15,7 +15,7 @@ const PORT = 3000;
 
 app.get("/health", (req, res) => {
   res.json({
-    status: "health check ok! server is running.",
+    status: "health check ok!",
   });
 });
 
