@@ -9,6 +9,7 @@ const connectDB = require("./src/config/mongodb");
 const strRouter = require("./src/router/strRouter");
 
 app.use(express.json());
+app.use(express.static(__dirname + "/build"));
 
 const PORT = 3000;
 
