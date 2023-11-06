@@ -1,21 +1,25 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit";
 
-const initialState ={
-    display:[]
-}
+const initialState = {
+  display: [
+    {
+      str: "p",
+    },
+  ],
+};
 
 const DisplaySlice = createSlice({
-    name: 'data',
-    initialState,
-    reducers:{
-        setDisplay:(state, action)=>{
-            //update the state
-            state.display = [...state.display, action.payload]
-        }
-    }
-})
+  name: "data",
+  initialState,
+  reducers: {
+    setDisplay: (state, action) => {
+      //update the state
+      state.display = [...state.display, action.payload];
+    },
+  },
+});
 
-const {reducer, actions}=DisplaySlice
-export const {setDisplay}= actions
+const { reducer, actions } = DisplaySlice;
+export const { setDisplay } = actions;
 
-export default reducer
+export default reducer;
